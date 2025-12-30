@@ -26,9 +26,7 @@ When the user opens this project, guide them through configuring oh-my-opencode 
 5. **Generate and write the config file** to `~/.config/opencode/oh-my-opencode.json`
    - Include `disabled_mcps` to disable all MCPs by default
 
-6. **Ask if user wants provider config** written to `~/.config/opencode/opencode.json`
-
-7. **Confirm success** and explain how to verify (run opencode, trigger an agent)
+6. **Confirm success** and explain how to verify (run opencode, trigger an agent)
 
 ## Preset Configurations
 
@@ -76,27 +74,6 @@ When the user opens this project, guide them through configuring oh-my-opencode 
     "frontend-ui-ux-engineer": { "model": "github-copilot/claude-sonnet-4" },
     "document-writer": { "model": "github-copilot/gpt-4o-mini" },
     "multimodal-looker": { "model": "github-copilot/gpt-4o" }
-  }
-}
-```
-
-## Provider Config (Optional)
-
-If the user wants provider configuration, write this to `~/.config/opencode/opencode.json`:
-
-```json
-{
-  "provider": {
-    "github-copilot": {
-      "name": "GitHub Copilot",
-      "models": {
-        "claude-sonnet-4": { "name": "Claude Sonnet 4" },
-        "gpt-4o": { "name": "GPT-4o", "attachment": true },
-        "gpt-4o-mini": { "name": "GPT-4o Mini" },
-        "o1": { "name": "o1", "thinking": true },
-        "o1-mini": { "name": "o1 Mini", "thinking": true }
-      }
-    }
   }
 }
 ```
