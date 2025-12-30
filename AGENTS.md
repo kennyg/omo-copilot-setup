@@ -1,20 +1,29 @@
 # GitHub Copilot Model Setup for oh-my-opencode
 
-When the user opens this project, guide them through configuring oh-my-opencode to use GitHub Copilot models.
+When the user opens this project, guide them through installing and configuring oh-my-opencode to use GitHub Copilot models.
 
 ## Your Task
 
-1. **Greet the user** and explain this wizard will configure oh-my-opencode agents to use GitHub Copilot models available through Copilot for Business.
+1. **Greet the user** and explain this wizard will install and configure oh-my-opencode agents to use GitHub Copilot models available through Copilot for Business.
 
-2. **Read `setup-copilot-models.md`** to understand available models and agent roles.
+2. **Check if oh-my-opencode is installed** by running:
+   ```bash
+   cat ~/.config/opencode/opencode.json | grep oh-my-opencode
+   ```
+   If not found, install it:
+   ```bash
+   bunx oh-my-opencode install --no-tui --claude=no --chatgpt=no --gemini=no
+   ```
 
-3. **Ask the user to select a configuration preset OR custom selection:**
+3. **Read `setup-copilot-models.md`** to understand available models and agent roles.
+
+4. **Ask the user to select a configuration preset OR custom selection:**
    - **Balanced (Recommended)**: Mix of Claude and GPT models
    - **GPT-Heavy**: All OpenAI models via Copilot
    - **Claude-Heavy**: Prefer Claude models where available
    - **Custom**: Select each agent individually
 
-4. **If Custom, prompt for each agent** using AskUserQuestion with these options:
+5. **If Custom, prompt for each agent** using AskUserQuestion with these options:
    - Sisyphus: claude-3.7-sonnet (recommended), gpt-4o, claude-sonnet-4
    - oracle: o3-mini (recommended), o3, claude-3.7-sonnet
    - librarian: claude-3.7-sonnet (recommended), gpt-4o
@@ -23,10 +32,10 @@ When the user opens this project, guide them through configuring oh-my-opencode 
    - document-writer: gpt-4o (recommended), claude-3.7-sonnet
    - multimodal-looker: gpt-4o (recommended - has vision)
 
-5. **Generate and write the config file** to `~/.config/opencode/oh-my-opencode.json`
+6. **Generate and write the config file** to `~/.config/opencode/oh-my-opencode.json`
    - Include `disabled_mcps` to disable all MCPs by default
 
-6. **Confirm success** and explain how to verify (run opencode, trigger an agent)
+7. **Confirm success** and explain how to verify (run opencode, trigger an agent)
 
 ## Preset Configurations
 
