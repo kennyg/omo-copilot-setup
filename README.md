@@ -24,13 +24,14 @@ OpenCode will read `AGENTS.md` and guide you through:
 | **Claude-Heavy** | Prefer Claude models where available |
 | **Custom** | Select each agent individually |
 
-## Available Models
+## Available Models (from models.dev)
 
-- `github-copilot/claude-sonnet-4` - Complex reasoning, coding
+- `github-copilot/claude-3.7-sonnet` - Latest Claude, excellent coding
+- `github-copilot/claude-sonnet-4` - Claude 4 Sonnet
 - `github-copilot/gpt-4o` - Multimodal, vision
-- `github-copilot/gpt-4o-mini` - Fast, efficient
-- `github-copilot/o1` - Deep reasoning
-- `github-copilot/o1-mini` - Fast reasoning
+- `github-copilot/o3-mini` - Fast reasoning
+- `github-copilot/o3` - Deep reasoning
+- `github-copilot/gemini-2.5-pro` - Long context
 
 ## Notes
 
