@@ -2,12 +2,42 @@
 
 Interactive configuration wizard for [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) using GitHub Copilot models.
 
+## Prerequisites
+
+Install oh-my-opencode first:
+
+```bash
+bunx oh-my-opencode install
+```
+
+Or for non-interactive setup (useful for CI/scripts):
+
+```bash
+bunx oh-my-opencode install --no-tui --claude=no --chatgpt=no --gemini=no
+```
+
+Verify installation:
+
+```bash
+opencode --version  # Should be 1.0.150 or higher
+```
+
 ## Usage
+
+**Option 1: Paste into opencode**
+
+Paste this into a fresh opencode session:
+```
+Configure GitHub Copilot models by following the instructions here https://raw.githubusercontent.com/kennyg/omo-copilot-setup/main/AGENTS.md
+```
+
+**Option 2: Clone and run locally**
 
 ```bash
 git clone https://github.com/kennyg/omo-copilot-setup
 cd omo-copilot-setup
 opencode
+# then type "set up my config"
 ```
 
 OpenCode will read `AGENTS.md` and guide you through:
