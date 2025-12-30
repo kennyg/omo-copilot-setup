@@ -1,6 +1,6 @@
 # GitHub Copilot Models for oh-my-opencode
 
-> Reference documentation for AGENTS.md setup wizard
+> Reference documentation for CLAUDE.md setup wizard
 
 ## Available Models
 
