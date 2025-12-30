@@ -15,12 +15,12 @@ When the user opens this project, guide them through configuring oh-my-opencode 
    - **Custom**: Select each agent individually
 
 4. **If Custom, prompt for each agent** using AskUserQuestion with these options:
-   - Sisyphus: claude-sonnet-4 (recommended), gpt-4o, o1
-   - oracle: o1 (recommended), o1-mini, claude-sonnet-4
-   - librarian: claude-sonnet-4 (recommended), gpt-4o
-   - explore: gpt-4o-mini (recommended), gpt-4o
-   - frontend-ui-ux-engineer: gpt-4o (recommended), claude-sonnet-4
-   - document-writer: gpt-4o-mini (recommended), claude-sonnet-4
+   - Sisyphus: claude-3.7-sonnet (recommended), gpt-4o, claude-sonnet-4
+   - oracle: o3-mini (recommended), o3, claude-3.7-sonnet
+   - librarian: claude-3.7-sonnet (recommended), gpt-4o
+   - explore: gpt-4o (recommended), o4-mini
+   - frontend-ui-ux-engineer: gpt-4o (recommended), claude-3.7-sonnet
+   - document-writer: gpt-4o (recommended), claude-3.7-sonnet
    - multimodal-looker: gpt-4o (recommended - has vision)
 
 5. **Generate and write the config file** to `~/.config/opencode/oh-my-opencode.json`
@@ -35,12 +35,12 @@ When the user opens this project, guide them through configuring oh-my-opencode 
 {
   "disabled_mcps": ["websearch_exa", "context7", "grep_app"],
   "agents": {
-    "Sisyphus": { "model": "github-copilot/claude-sonnet-4" },
-    "oracle": { "model": "github-copilot/o1" },
-    "librarian": { "model": "github-copilot/claude-sonnet-4" },
-    "explore": { "model": "github-copilot/gpt-4o-mini" },
+    "Sisyphus": { "model": "github-copilot/claude-3.7-sonnet" },
+    "oracle": { "model": "github-copilot/o3-mini" },
+    "librarian": { "model": "github-copilot/claude-3.7-sonnet" },
+    "explore": { "model": "github-copilot/gpt-4o" },
     "frontend-ui-ux-engineer": { "model": "github-copilot/gpt-4o" },
-    "document-writer": { "model": "github-copilot/gpt-4o-mini" },
+    "document-writer": { "model": "github-copilot/gpt-4o" },
     "multimodal-looker": { "model": "github-copilot/gpt-4o" }
   }
 }
@@ -52,11 +52,11 @@ When the user opens this project, guide them through configuring oh-my-opencode 
   "disabled_mcps": ["websearch_exa", "context7", "grep_app"],
   "agents": {
     "Sisyphus": { "model": "github-copilot/gpt-4o" },
-    "oracle": { "model": "github-copilot/o1" },
+    "oracle": { "model": "github-copilot/o3-mini" },
     "librarian": { "model": "github-copilot/gpt-4o" },
-    "explore": { "model": "github-copilot/gpt-4o-mini" },
+    "explore": { "model": "github-copilot/gpt-4o" },
     "frontend-ui-ux-engineer": { "model": "github-copilot/gpt-4o" },
-    "document-writer": { "model": "github-copilot/gpt-4o-mini" },
+    "document-writer": { "model": "github-copilot/gpt-4o" },
     "multimodal-looker": { "model": "github-copilot/gpt-4o" }
   }
 }
@@ -67,12 +67,12 @@ When the user opens this project, guide them through configuring oh-my-opencode 
 {
   "disabled_mcps": ["websearch_exa", "context7", "grep_app"],
   "agents": {
-    "Sisyphus": { "model": "github-copilot/claude-sonnet-4" },
-    "oracle": { "model": "github-copilot/claude-sonnet-4" },
-    "librarian": { "model": "github-copilot/claude-sonnet-4" },
-    "explore": { "model": "github-copilot/gpt-4o-mini" },
-    "frontend-ui-ux-engineer": { "model": "github-copilot/claude-sonnet-4" },
-    "document-writer": { "model": "github-copilot/gpt-4o-mini" },
+    "Sisyphus": { "model": "github-copilot/claude-3.7-sonnet" },
+    "oracle": { "model": "github-copilot/claude-3.7-sonnet" },
+    "librarian": { "model": "github-copilot/claude-3.7-sonnet" },
+    "explore": { "model": "github-copilot/gpt-4o" },
+    "frontend-ui-ux-engineer": { "model": "github-copilot/claude-3.7-sonnet" },
+    "document-writer": { "model": "github-copilot/gpt-4o" },
     "multimodal-looker": { "model": "github-copilot/gpt-4o" }
   }
 }

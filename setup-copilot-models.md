@@ -2,38 +2,40 @@
 
 > Reference documentation for AGENTS.md setup wizard
 
-## Available Models
+## Available Models (from models.dev)
 
 | Model | Provider | Capabilities | Best For |
 |-------|----------|--------------|----------|
-| `github-copilot/claude-sonnet-4` | Anthropic | Excellent reasoning, coding | Complex tasks, orchestration |
-| `github-copilot/claude-3.5-sonnet` | Anthropic | Good balance | General purpose |
+| `github-copilot/claude-3.5-sonnet` | Anthropic | Excellent reasoning, coding | Complex tasks, orchestration |
+| `github-copilot/claude-3.7-sonnet` | Anthropic | Latest Claude | General purpose |
+| `github-copilot/claude-sonnet-4` | Anthropic | Claude 4 Sonnet | Advanced coding |
 | `github-copilot/gpt-4o` | OpenAI | Multimodal, vision | UI work, image analysis |
-| `github-copilot/gpt-4o-mini` | OpenAI | Fast, efficient | Quick tasks, exploration |
-| `github-copilot/o1` | OpenAI | Deep reasoning | Strategic decisions, planning |
-| `github-copilot/o1-mini` | OpenAI | Fast reasoning | Quick analysis |
-| `github-copilot/o1-preview` | OpenAI | Preview features | Experimental |
+| `github-copilot/gpt-4.1` | OpenAI | Latest GPT | General purpose |
+| `github-copilot/o3-mini` | OpenAI | Fast reasoning | Quick analysis |
+| `github-copilot/o3` | OpenAI | Deep reasoning | Strategic decisions, planning |
+| `github-copilot/o4-mini` | OpenAI | Faster reasoning | Quick tasks |
+| `github-copilot/gemini-2.5-pro` | Google | Long context | Large codebases |
 
 ## Agent Descriptions
 
 ### Sisyphus (Primary Orchestrator)
 The main agent that coordinates work, delegates to other agents, and handles complex multi-step tasks.
-- **Recommended**: `claude-sonnet-4` or `gpt-4o`
+- **Recommended**: `claude-3.7-sonnet` or `gpt-4o`
 - Needs strong reasoning and task planning
 
 ### oracle (Strategic Advisor)
 Provides architectural guidance, code review, and strategic decisions.
-- **Recommended**: `o1` (reasoning model)
+- **Recommended**: `o3-mini` (reasoning model)
 - Benefits from deep thinking capabilities
 
 ### librarian (Multi-Repo Analysis)
 Searches across repositories, finds documentation, and retrieves OSS examples.
-- **Recommended**: `claude-sonnet-4`
+- **Recommended**: `claude-3.7-sonnet`
 - Needs good comprehension and synthesis
 
 ### explore (Fast Exploration)
 Quickly navigates codebases, finds files, and answers structural questions.
-- **Recommended**: `gpt-4o-mini`
+- **Recommended**: `gpt-4o`
 - Speed is more important than depth
 
 ### frontend-ui-ux-engineer (UI/UX Generation)
@@ -43,7 +45,7 @@ Creates and modifies frontend code, handles styling and visual components.
 
 ### document-writer (Documentation)
 Generates technical documentation, READMEs, and explanations.
-- **Recommended**: `gpt-4o-mini`
+- **Recommended**: `gpt-4o`
 - Fast generation, good quality
 
 ### multimodal-looker (Vision/PDF Analysis)
@@ -53,9 +55,9 @@ Analyzes images, PDFs, diagrams, and visual content.
 
 ## Model Selection Tips
 
-- **For speed**: Use `gpt-4o-mini` - fastest response times
-- **For reasoning**: Use `o1` or `o1-mini` - thinking models
-- **For coding**: Use `claude-sonnet-4` - excellent code generation
+- **For speed**: Use `gpt-4o` or `o4-mini`
+- **For reasoning**: Use `o3` or `o3-mini` - thinking models
+- **For coding**: Use `claude-3.7-sonnet` - excellent code generation
 - **For vision**: Use `gpt-4o` - required for image/PDF analysis
 
 ## Example Configurations
