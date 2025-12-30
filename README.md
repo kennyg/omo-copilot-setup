@@ -1,26 +1,6 @@
 # omo-copilot-setup
 
-Interactive configuration wizard for [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) using GitHub Copilot models.
-
-## Prerequisites
-
-Install oh-my-opencode first:
-
-```bash
-bunx oh-my-opencode install
-```
-
-Or for non-interactive setup (useful for CI/scripts):
-
-```bash
-bunx oh-my-opencode install --no-tui --claude=no --chatgpt=no --gemini=no
-```
-
-Verify installation:
-
-```bash
-opencode --version  # Should be 1.0.150 or higher
-```
+Interactive wizard that installs and configures [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) to use GitHub Copilot models.
 
 ## Usage
 
