@@ -14,7 +14,6 @@ OpenCode will read `AGENTS.md` and guide you through:
 
 1. Selecting a configuration preset (Balanced, GPT-Heavy, Claude-Heavy) or custom
 2. Writing config to `~/.config/opencode/oh-my-opencode.json`
-3. Optionally setting up provider configuration
 
 ## Presets
 
